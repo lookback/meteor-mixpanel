@@ -1,5 +1,4 @@
 Package.describe({
-  name: 'mixpanel',
   summary: 'A local mixpanel package for our project.'
 });
 
@@ -25,7 +24,7 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
-  api.use('mixpanel');
+  api.use('meteor-mixpanel');
   api.use('tinytest');
   
   api.add_files('mixpanel_tests.js');

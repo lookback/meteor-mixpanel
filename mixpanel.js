@@ -6,7 +6,7 @@ var loadMixpanel = function () {
 loadMixpanel();
 
 var settings = Meteor.settings;
-var mixpanelToken = settings && settings.public.mixpanel;
+var mixpanelToken = settings && settings.public.MIXPANEL_TOKEN;
 
 if (!mixpanelToken)
   console.warn('No mixpanel token found in settings.json');
